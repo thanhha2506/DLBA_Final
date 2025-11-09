@@ -10,7 +10,7 @@ def display_results(result):
 
     res = result["result"]
 
-    st.markdown("### 🧩 **Detected Result**")
+    st.markdown("🧩 **Detected Result**")
     st.markdown(f"**Fruit Type:** {res.get('fruit_type', 'Unknown').capitalize()}")
     st.markdown(f"**Confidence:** {res.get('confidence', 0)*100:.2f}%")
     st.markdown(f"**Defect Status:** {res.get('defect_status', '-')}")
@@ -25,3 +25,4 @@ def display_results(result):
         st.warning("🟡 Trái cây chưa đạt chuẩn, cần thời gian chín thêm.")
     else:
         st.info("ℹ️ Không thể xác định rõ trạng thái trái cây.")
+
