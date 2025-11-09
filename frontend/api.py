@@ -3,7 +3,7 @@ import asyncio
 import io
 
 # URL backend FastAPI
-API_URL = "http://127.0.0.1:8000/predict/"
+API_URL = "https://jewell-unvexatious-transsegmentally.ngrok-free.dev/predict/"
 
 
 async def predict_image(image_file):
@@ -32,3 +32,4 @@ async def predict_image(image_file):
 
     except Exception as e:
         raise Exception(f"❌ Failed to connect to backend: {e}")
+
